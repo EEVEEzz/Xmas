@@ -1,0 +1,226 @@
+body {
+  background: linear-gradient(90deg,white,red, green, white, red, green, white, red, green, white)
+}
+
+.container {
+    position: relative;
+    top: 200px;
+    text-align: center;
+}
+
+.merry {
+    font-family: 'Ultra', serif;
+    font-size: 65px;
+    font-weight: bold;
+    text-shadow: 0 5px 10px rgb(0, 0, 0), 2px 2px 5px rgb(0, 0, 0);
+}
+
+.and {
+    text-shadow: 0 5px 10px rgb(0, 0, 0), 2px 2px 5px rgb(0, 0, 0);
+    color: rgb(216, 216, 216);
+    font-size: 45px;
+    font-weight: bold;
+    font-family: 'Ultra', serif;
+}
+
+.christmas {
+    text-shadow: 0 5px 10px rgb(0, 0, 0), 2px 2px 5px rgb(0, 0, 0);
+    font-size: 65px;
+    font-weight: bold;
+    font-family: 'Ultra', serif;
+}
+
+
+/* ANIMATIONS */
+
+.m {
+    animation-name: bounce5;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-duration: 1100ms;
+    animation-direction: linear;
+}
+
+.e {
+    animation-name: bounce4;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-duration: 1020ms;
+    animation-direction: linear;
+}
+
+.a {
+    animation-name: bounce2;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-duration: 1080ms;
+    animation-direction: linear;
+}
+
+.c {
+    animation-name: bounce3;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-duration: 900ms;
+    animation-direction: linear;
+}
+
+.r {
+    animation-name: bounce1;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-duration: 1075ms;
+    animation-direction: linear;
+}
+
+.y {
+    animation-name: bounce3;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-duration: 1030ms;
+    animation-direction: linear;
+}
+
+.h {
+    animation-name: bounce3;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-duration: 1090ms;
+    animation-direction: linear;
+}
+
+.i {
+    animation-name: bounce5;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-duration: 1000ms;
+    animation-direction: linear;
+}
+
+.t {
+    animation-name: bounce1;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-duration: 1050ms;
+    animation-direction: linear;
+}
+
+.s {
+  animation-name: bounce2;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+  animation-duration: 1050ms;
+  animation-direction: linear;
+}
+
+.and span {
+    animation-name: shake;
+    animation-iteration-count: infinite;
+    animation-duration: 1000ms;
+    animation-direction: linear;
+}
+
+
+/* Keyframes */
+
+@keyframes bounce1 {
+    from {
+        color: blueviolet;
+        position: relative;
+        top: 1px;
+    }
+    to {
+        color: lightblue;
+        position: relative;
+        bottom: 5px;
+        transition: ease 1s;
+    }
+}
+
+@keyframes bounce2 {
+    from {
+        color: rgb(13, 126, 255);
+        position: relative;
+        top: 4px;
+    }
+    to {
+        color: rgb(199, 0, 156);
+        position: relative;
+        bottom: 10px;
+        transition: ease 1.2s;
+    }
+}
+
+@keyframes bounce3 {
+    from {
+        color: rgb(173, 171, 0);
+        position: relative;
+        top: 9px;
+    }
+    to {
+        color: rgb(206, 0, 0);
+        position: relative;
+        bottom: 2px;
+        transition: ease 1.5s;
+    }
+}
+
+@keyframes bounce4 {
+    from {
+        color: rgb(103, 255, 82);
+        position: relative;
+        top: 13px;
+    }
+    to {
+        color: rgb(255, 211, 91);
+        position: relative;
+        bottom: 8px;
+        transition: ease 1.4s;
+    }
+}
+
+@keyframes bounce5 {
+    from {
+        color: rgb(255, 251, 44);
+        position: relative;
+        top: 3px;
+    }
+    to {
+        color: rgb(20, 188, 255);
+        position: relative;
+        bottom: 15px;
+        transition: ease 1.9s;
+    }
+}
+
+@keyframes shake {
+    from {
+        rotate-x: 10deg;
+    }
+    to {
+        rotate-x: 15deg;
+    }
+}
+
+
+/* Phone size adjustment if using a phone */
+
+@media (max-width: 750px) {
+    .merry {
+        position: relative;
+        bottom: 15px;
+        font-size: 45px;
+    }
+    .and {
+        font-size: 50px;
+    }
+    .christmas {
+        position: relative;
+        top: 25px;
+        font-size: 30px;
+    }
+    .container {
+        position: relative;
+        justify-content: space-evenly;
+    }
+}
