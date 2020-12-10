@@ -1,5 +1,5 @@
 body {
-  background: linear-gradient(90deg,white,red, green, white, red, green, white, red, green, white)
+    background: linear-gradient(90deg, white, red, green, white, red, green, white, red, green, white)
 }
 
 .container {
@@ -9,6 +9,8 @@ body {
 }
 
 .merry {
+    position: relative;
+    bottom: 20px;
     font-family: 'Ultra', serif;
     font-size: 65px;
     font-weight: bold;
@@ -24,6 +26,8 @@ body {
 }
 
 .christmas {
+    position: relative;
+    top: 30px;
     text-shadow: 0 5px 10px rgb(0, 0, 0), 2px 2px 5px rgb(0, 0, 0);
     font-size: 65px;
     font-weight: bold;
@@ -106,11 +110,11 @@ body {
 }
 
 .s {
-  animation-name: bounce2;
-  animation-iteration-count: infinite;
-  animation-play-state: running;
-  animation-duration: 1050ms;
-  animation-direction: linear;
+    animation-name: bounce2;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-duration: 1050ms;
+    animation-direction: linear;
 }
 
 .and span {
