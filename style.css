@@ -1,37 +1,48 @@
 body {
-    background: linear-gradient(90deg, white, red, green, white, red, green, white, red, green, white)
+  background-image: linear-gradient(to top, #48c6ef 0%, #6f86d6 100%);
+  height: 100vh;
 }
 
 .container {
-    position: relative;
-    top: 200px;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
 }
 
-.merry {
-    position: relative;
-    bottom: 20px;
-    font-family: 'Ultra', serif;
-    font-size: 65px;
+.congrats {
+    font-family: sans-serif;
+    font-size: 100px;
     font-weight: bold;
-    text-shadow: 0 5px 10px rgb(0, 0, 0), 2px 2px 5px rgb(0, 0, 0);
+    text-shadow: 1px 3px 3px black;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
-.and {
-    text-shadow: 0 5px 10px rgb(0, 0, 0), 2px 2px 5px rgb(0, 0, 0);
-    color: rgb(216, 216, 216);
-    font-size: 45px;
-    font-weight: bold;
-    font-family: 'Ultra', serif;
+.alet {
+  margin-bottom: 50px;
+  font-family: sans-serif;
+  font-size: 100px;
+  font-weight: bold;
+  text-shadow: 1px 3px 3px black;
 }
 
-.christmas {
-    position: relative;
-    top: 30px;
-    text-shadow: 0 5px 10px rgb(0, 0, 0), 2px 2px 5px rgb(0, 0, 0);
-    font-size: 65px;
+img {
+    box-shadow: 0 0 10px black;
+    border-radius: 10px;
+    animation: blink 1s linear infinite;
+    width: 720px;
+    height: 550px;
+}
+
+
+
+.hannelize {
+    margin-top: 50px;
+    text-shadow: 1px 3px 3px black;
+    font-size: 100px;
     font-weight: bold;
-    font-family: 'Ultra', serif;
+    font-family: sans-serif;
 }
 
 
@@ -117,14 +128,6 @@ body {
     animation-direction: linear;
 }
 
-.and span {
-    animation-name: shake;
-    animation-iteration-count: infinite;
-    animation-duration: 1000ms;
-    animation-direction: linear;
-}
-
-
 /* Keyframes */
 
 @keyframes bounce1 {
@@ -206,25 +209,62 @@ body {
     }
 }
 
+@keyframes blink {
+	0% {
+		box-shadow: 0 3px 20px #fbff00;
+	}
+	20% {
+		box-shadow: 0 3px 20px #80ff00;
+	}
+	40% {
+		box-shadow: 0 3px 20px #00f7ff;
+	}
+	60% {
+		box-shadow: 0 3px 20px rgb(59, 128, 255);
+	}
+	80% {
+		box-shadow: 0 3px 20px rgb(144, 74, 255);
+	}
+	100% {
+		box-shadow: 0 3px 20px rgb(240, 78, 255);
+	}
+}
+
 
 /* Phone size adjustment if using a phone */
 
 @media (max-width: 750px) {
-    .merry {
-        position: relative;
-        bottom: 15px;
-        font-size: 45px;
-    }
-    .and {
-        font-size: 50px;
-    }
-    .christmas {
-        position: relative;
-        top: 25px;
-        font-size: 30px;
-    }
-    .container {
-        position: relative;
-        justify-content: space-evenly;
-    }
+  .congrats {
+    font-family: sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    text-shadow: 1px 3px 3px black;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.alet {
+  margin-bottom: 30px;
+  font-family: sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  text-shadow: 1px 3px 3px black;
+}
+
+img {
+    box-shadow: 0 0 10px black;
+    border-radius: 10px;
+    animation: blink 1s linear infinite;
+    width: 320px;
+    height: 240px;
+}
+
+.hannelize {
+    margin-top: 30px;
+    text-shadow: 1px 3px 3px black;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
 }
